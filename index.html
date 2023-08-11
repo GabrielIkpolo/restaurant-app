@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content=" Resturant App">
-    <meta name="description" content="Food varieties you can order: Rice, beans, swallow, soup: egusi" >
+    <meta name="description" content="Food varieties you can order: Rice, beans, swallow, soup: egusi">
     <meta name="author" content="student class project">
     <meta name="robot" content="index, follow">
     <link rel="shotcut icon" href="./assets/images/plate3.png" />
@@ -35,16 +35,15 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                          data-bs-auto-close="outside">
+                            data-bs-auto-close="outside"> <!--`data-bs-auto-close="outside"` introduces sub menu -->
                             Menu
                         </a>
-                        <ul class="dropdown-menu dropend" >
+                        <ul class="dropdown-menu dropend">
                             <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="#" 
-                                    data-bs-toggle="dropdown" >
+                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">
                                     Soup
                                 </a>
-                                <ul class="dropdown-menu" >
+                                <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Oha</a></li>
                                     <li><a class="dropdown-item" href="#">Egusi</a></li>
                                     <li><a class="dropdown-item" href="#">Efor</a></li>
@@ -58,11 +57,10 @@
                                 </ul>
                             </li>
                             <li class="dropdown-submenu dropend">
-                                <a class="dropdown-item dropdown-toggle" href="#" 
-                                    data-bs-toggle="dropdown" >
+                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">
                                     Swallow
                                 </a>
-                                <ul class="dropdown-menu" >
+                                <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Eba</a></li>
                                     <li><a class="dropdown-item" href="#">Pounded Yam</a></li>
                                     <li><a class="dropdown-item" href="#">Akpu/fufu</a></li>
@@ -71,15 +69,26 @@
                                 </ul>
                             </li>
                             <li class="dropdown-submenu dropend">
-                                <a class="dropdown-item dropdown-toggle" href="#" 
-                                    data-bs-toggle="dropdown" >
+                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
                                     Chewables
                                 </a>
-                                <ul class="dropdown-menu" >
-                                    <li><a class="dropdown-item" href="#">Rice</a></li>
+                                <ul class="dropdown-menu">
+                                    <!-- Submenu implimented here by adding `data-bs-auto-close="outside"` to immediate parent -->
+                                    <li class="dropdown-submenu dropend">
+                                        <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" >
+                                            Rice
+                                        </a>
+                                        <ul class="dropdown-menu" >
+                                            <li><a class="dropdown-item" href="#">Rice n stew</a></li>
+                                            <li><a class="dropdown-item" href="#">Fried rice</a></li>
+                                            <li><a class="dropdown-item" href="#">Jollof rice</a></li>
+                                        </ul>
+                                    </li>
+
                                     <li><a class="dropdown-item" href="#">Rice-beans n stew</a></li>
                                     <li><a class="dropdown-item" href="#">Yam n stew</a></li>
                                     <li><a class="dropdown-item" href="#">Fried yams</a></li>
+                                    <li><a class="dropdown-item" href="#">Beans</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -109,4 +118,3 @@
 </body>
 
 </html>
-
