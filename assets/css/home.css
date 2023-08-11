@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0px;
+}
+
+.wrapper{
+    min-height: 100vh;
+}
+
+#nav{
+    position: sticky;
+    top: 0;
+    padding-bottom: 0px;
+}
+
+.navbar-brand{
+ font-size: 30px;
+ font-weight: bolder;
+}
+
+.footer{
+    color:white;
+    background-color: #1a1d20;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    text-align: center;
+}
+

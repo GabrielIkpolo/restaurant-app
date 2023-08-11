@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" Resturant App">
+    <meta name="description" content="Food varieties you can order: Rice, beans, swallow, soup: egusi" >
+    <meta name="author" content="student class project">
+    <meta name="robot" content="index, follow">
+    <link rel="shotcut icon" href="./assets/images/plate3.png" />
+    <!-- boostrapt link  -->
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <title>Resturant App</title>
+</head>
+
+<body>
+    <nav id="nav" class="navbar navbar-expand-lg bg-dark " data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">FOODIE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto"> <!-- Apply mx-auto class here -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menuDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="soupDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Soup
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="soupDropdown">
+                                    <li><a class="dropdown-item" href="#">Oha</a></li>
+                                    <li><a class="dropdown-item" href="#">Eduggi</a></li>
+                                    <li><a class="dropdown-item" href="#">Efor</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#" id="swallowDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Swallow
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="swallowDropdown">
+                                    <li><a class="dropdown-item" href="#">Eba</a></li>
+                                    <li><a class="dropdown-item" href="#">Pounded Yam</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="wrapper">
+
+    </div>
+
+
+    <div class="footer">
+        &copy; Resturant App Project
+    </div>
+
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/home.js"></script>
+</body>
+
+</html>
+
