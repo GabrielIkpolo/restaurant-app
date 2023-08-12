@@ -27,17 +27,32 @@ body{
     text-align: center;
 }
 
-#resturant-carousel{
+/* #resturant-carousel{
     
-}
+} */
 
 #carousal-image{
     height: 500px;
 }
 
-@media (width: 313px) {
-    #carousal-image{
-        height:220px;
+@media (max-width: 313px) {
+    #carousal-image {
+        height: 220px;
     }   
 }
 
+/* Media query for width between 313px and 1024px */
+@media (min-width: 314px) and (max-width: 604px) {
+    #carousal-image {
+        height: 220px;
+    }   
+}
+
+.caption-title{
+    font-size: 44px;
+    font-weight: bolder;
+}
+
+.caption-body{
+    font-size: 20px;
+}
