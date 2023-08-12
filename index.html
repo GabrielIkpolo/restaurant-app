@@ -69,16 +69,17 @@
                                 </ul>
                             </li>
                             <li class="dropdown-submenu dropend">
-                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                                <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                    data-bs-auto-close="outside">
                                     Chewables
                                 </a>
                                 <ul class="dropdown-menu">
                                     <!-- Submenu implimented here by adding `data-bs-auto-close="outside"` to immediate parent -->
                                     <li class="dropdown-submenu dropend">
-                                        <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" >
+                                        <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown">
                                             Rice
                                         </a>
-                                        <ul class="dropdown-menu" >
+                                        <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="#">Rice n stew</a></li>
                                             <li><a class="dropdown-item" href="#">Fried rice</a></li>
                                             <li><a class="dropdown-item" href="#">Jollof rice</a></li>
@@ -101,12 +102,58 @@
             </div>
         </div>
     </nav>
-
+    <!-- Nav ends here  -->
 
     <div class="wrapper">
 
+        <!-- Carousal starts  Here  -->
+
+        <div id="resturant-carousal" class="carousel  carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#resturant-carousal" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#resturant-carousal" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#resturant-carousal" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img id="carousal-image" src="./assets/images/covers/eating.jpg" class="d-block w-100" alt="eating-image">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img id="carousal-image" src="./assets/images/covers/tiny-dish.jpg" class="d-block w-100" alt=" Eating-environ">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img id="carousal-image" src="./assets/images/covers/rest-env2.jpg" class="d-block w-100" alt="restaurant-env">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#resturant-carousal"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#resturant-carousal"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
 
+    <!-- Carousal ends here  -->
 
     <div class="footer">
         &copy; Resturant App Project
