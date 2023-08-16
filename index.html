@@ -12,9 +12,11 @@
     <link rel="shotcut icon" href="./assets/images/plate3.png" />
     <!-- boostrapt link  -->
     <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- swiper link -->
+    <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css" />
 
     <link rel="stylesheet" href="./assets/css/home.css" />
-    <title>Resturant App</title>
+    <title>Restaurant App</title>
 </head>
 
 <body>
@@ -156,17 +158,60 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+
+        <!-- Carousal ends here  -->
+
+<!-- A Little Description Here  -->
+
+<div class="some-description">
+    <p>Some Description</p>
+</div>
+
+        <!-- Introducing swipe  -->
+
+        <div #swiperRef="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img class="rounded-circle" src="./assets/images/foodImages/asun.png" alt="Asun"/>
+                    <span class="slide-label">Asun</span>
+                </div>
+                <div class="swiper-slide">
+                    <img class="rounded-circle" src="./assets/images/foodImages/banger-soup.png" alt="banga Soup"/>
+                    <span class="slide-label">Banga soup</span>
+                </div>
+                <div class="swiper-slide">
+                    <img class="rounded-circle" src="./assets/images/foodImages/efor.png" alt="Efor"/>
+                    <span class="slide-label">Efor</span>
+                </div>
+                <div class="swiper-slide">
+                    <img class="rounded-circle" src="./assets/images/foodImages/egusi-n-pounded-yam.png" alt="Egusi"/>
+                    <span class="slide-label">Egusi</span>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+
+
+
+
     </div>
 
-    <!-- Carousal ends here  -->
+
+
+
 
     <div class="footer">
-        &copy; Resturant App Project
+        &copy; Restaurant App Project
     </div>
 
-
+    <!-- Boostrap js  -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- swipper js  -->
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/mySwiper.js"></script>
 </body>
 
 </html>
