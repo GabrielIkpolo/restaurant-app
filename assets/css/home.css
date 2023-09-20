@@ -1,3 +1,8 @@
+:root{
+  --swiper-navigation-size: 35px;
+  --swiper-button-transform: translateY(-50%);
+}
+
 body {
   margin: 0;
   padding: 0px;
@@ -114,8 +119,17 @@ body {
   color: #1a1d20;
 }
 
+.swiper-button-next, .swiper-button-prev{
+  font-size: var(--swiper-navigation-size);
+  width: var(--swiper-navigation-size);
+  height: var(--swiper-navigation-size);
+  transform: var(--swiper-button-transform);
+}
+
 @media (min-width: 300px) and (max-width: 604px) {
   .some-description .description {
     font-size: 24px;
   }
 }
+
+/* End of Swiper CSS*/
