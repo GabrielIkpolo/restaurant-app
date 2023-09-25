@@ -1,4 +1,4 @@
-:root{
+:root {
   --swiper-navigation-size: 35px;
   --swiper-button-transform: translateY(-50%);
 }
@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  /* box-sizing: border-box;  Introduced this */
 }
 
 .wrapper {
@@ -27,13 +28,6 @@ body {
   font-weight: bolder;
 }
 
-.footer {
-  color: white;
-  background-color: #1a1d20;
-  padding-top: 30px;
-  padding-bottom: 80px;
-  text-align: center;
-}
 
 /* Restaurant-carousel  starts here  */
 
@@ -119,7 +113,8 @@ body {
   color: #1a1d20;
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
   font-size: var(--swiper-navigation-size);
   width: var(--swiper-navigation-size);
   height: var(--swiper-navigation-size);
@@ -131,5 +126,66 @@ body {
     font-size: 24px;
   }
 }
-
 /* End of Swiper CSS*/
+
+/* Food sample prizes grid display starts Here  */
+
+.food-sample-prices{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-left: 25px;
+  margin-right: 25px;
+  /* overflow: auto; */
+}
+
+@media(max-width: 700px){
+  .food-sample-prices{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 400px){
+  .food-sample-prices{
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 50px;
+    margin-right: 0px;
+    
+  }
+}
+
+.food-item{
+  
+} 
+
+.food-pic{
+  border-radius: 5px;
+  object-fit: cover;
+  max-width: 80%;
+}
+
+.food-content{
+ max-width: 80%;
+}
+
+.food-title{
+  margin-right: 30%;
+}
+
+.ratings{
+  color: red;
+}
+
+
+
+
+/* The footer section starts here  */
+.footer {
+  color: white;
+  background-color: #1a1d20;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  text-align: center;
+}
