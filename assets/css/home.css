@@ -161,6 +161,13 @@ body {
 .food-item {
   overflow: hidden;
   max-width: 90%;
+  border: 1px solid rgb(243, 231, 231);
+  border-radius: 5px;
+  box-shadow: inherit;
+}
+
+.food-item:hover{
+  border: 1px solid rgb(252, 207, 207);
 }
 
 /* Start picture zoom function  */
@@ -184,11 +191,13 @@ body {
   transform: scale(1.2);
   transition: ease-in 0.7s;
 }
+
 /* End Zoom Function  */
 
 .food-content {
   max-width: 90%;
   margin-top: 10px;
+  padding: 5px;
 }
 
 .food-title {
@@ -200,6 +209,26 @@ body {
   float: right;
 }
 
+.food-phrase {
+  padding-top: 10px;
+  color: #1a1d20;
+  font-size: 14px;
+}
+
+.order-btn-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.order-btn {
+  background: rgb(241, 56, 56);
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 
 
 
