@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" Resturant App">
+    <meta name="description" content="Food varieties you can order: Rice, beans, swallow, soup: egusi">
+    <meta name="author" content="student class project">
+    <meta name="robot" content="index, follow">
+    <link rel="shotcut icon" href="../assets/images/plate3.png" />
+    <!-- boostrapt link  -->
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- swiper link -->
+    <link rel="stylesheet" href="../node_modules/swiper/swiper-bundle.min.css" />
+    <!-- My CSS  -->
+    <link rel="stylesheet" href="../assets/css/home.css" />
+    <title>Restaurant App</title>
+
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 250px;
+            height: 138px;
+            position: absolute;
+            left: 40%;
+            top: 40%;
+            /* margin-left: -150px;
+            margin-right: -150px; */
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="../assets/images/foodImages/banger-soup.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/foodImages/jollof-rice-n-fried-plantain.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/foodImages/moi-moi-n-pap.png" />
+            </div>
+            <div class="swiper-slide">
+                <img src="../assets/images/foodImages/Okra-soup.jpg" />
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+
+    <!-- Boostrap js  -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- swipper js  -->
+    <script src="../node_modules/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            // pagination: {
+            //     el: ".swiper-pagination",
+            // },
+            autoplay: {
+                delay: 50, // Delay in milliseconds (3 seconds)
+                disableOnInteraction: false, // Allows manual navigation while autoplaying
+            },
+            loop: true,
+            speed: 5000,
+        });
+    </script>
+</body>
+
+</html>

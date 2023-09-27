@@ -28,6 +28,29 @@ body {
   font-weight: bolder;
 }
 
+.cart {
+  margin-left: 10px;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.cart .cart-count{
+  color: white;
+  font-size: 13px;
+  border: 1px solid black;
+  width: 25px; 
+  height: 25px; 
+  border-radius: 50%;
+  background-color: rgb(202, 3, 3);
+  padding-left: 7px;
+  padding-top: 1px;
+  position: absolute;
+  top: 3px;
+  left: 11px;
+}
+
+
+
 
 /* Restaurant-carousel  starts here  */
 
