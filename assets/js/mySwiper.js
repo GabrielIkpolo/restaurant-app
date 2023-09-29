@@ -14,10 +14,10 @@ const initSwiper = () => {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-      // autoplay: {
-      //   delay: 3000, // Delay in milliseconds (3 seconds)
-      //   disableOnInteraction: false, // Allows manual navigation while autoplaying
-      // },
+      autoplay: {
+        delay: 3000, // Delay in milliseconds (3 seconds)
+        disableOnInteraction: false, // Allows manual navigation while autoplaying
+      },
       loop: true,
     });
   } else {

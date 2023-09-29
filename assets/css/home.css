@@ -28,10 +28,67 @@ body {
   font-weight: bolder;
 }
 
+.navbar{
+  padding-top: 0px;
+  padding-bottom : 0px;
+}
+
+.navbar-toggler{
+  margin-left: 37rem;
+  margin-right: 0;
+}
+
+.profile-and-cart-cover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ /* added some margin to user profile and cart when displayed on devices with lower screen width  */
+ @media(max-width:991px){
+  .profile-and-cart-cover{
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+ }
+
+ /* Added responsivity between the button and items after it, ensuring the button stays close to the right  */
+@media(max-width: 927px){
+  .navbar-toggler{
+    margin-left: 30rem;
+    margin-right: 0;
+  }
+}
+
+@media(max-width: 815px){
+  .navbar-toggler{
+    margin-left: 15rem;
+    margin-right: 0;
+  }
+}
+
+@media(max-width: 575px){
+  .navbar-toggler{
+    margin-left: 1rem;
+    margin-right: 0;
+  }
+}
+
+@media(max-width: 351px){
+  .navbar-toggler{
+    margin-left: -8px;
+    margin-right: 0;
+  }
+}
+
+.user-profile{
+  color: rgb(202, 198, 198);
+  margin-left: 2px;
+}
+
 .cart {
   margin-left: 10px;
   position: relative;
-  /* overflow: hidden; */
 }
 
 .cart .cart-count{
@@ -49,8 +106,9 @@ body {
   left: 11px;
 }
 
-
-
+.cart:hover{
+  cursor: pointer;
+}
 
 /* Restaurant-carousel  starts here  */
 
@@ -150,7 +208,6 @@ body {
     font-size: 24px;
   }
 }
-
 /* End of Swiper CSS*/
 
 /* Food sample prizes grid display starts Here  */
@@ -176,7 +233,7 @@ body {
 @media(max-width: 400px) {
   .food-sample-prices {
     grid-template-columns: repeat(1, 1fr);
-    margin-left: 50px;
+    margin-left: 34px;
     margin-right: 0px;
   }
 }
