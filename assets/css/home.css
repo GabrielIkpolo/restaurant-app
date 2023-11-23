@@ -15,7 +15,6 @@ body {
 }
 
 /* Nav Starts here  */
-
 #nav {
   position: sticky;
   top: 0;
@@ -138,6 +137,21 @@ body {
   font-size: 24px;
 }
 
+ /* Test intro  */
+.carousel-item {
+  opacity: 0;
+  transition: opacity .5s ease-in-out;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  transition: transform .5s ease-in-out;
+}
+/* End of carousel  */
+
 /* Some description  */
 .some-description {
   text-align: center;
@@ -211,7 +225,6 @@ body {
 /* End of Swiper CSS*/
 
 /* Food sample prizes grid display starts Here  */
-
 .food-sample-prices {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
